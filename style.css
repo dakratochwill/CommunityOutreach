@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.btn-solid {
+    background: #ffb300;
+    color: #000;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: none;
+}
+
+.btn-solid:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-sm {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    border-bottom: 2px solid #ffb300;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkred;
+    border: none;
+}
+
+.title {
+    font-size: 40px;
+    border-left: 5px solid #ffb300;
+    line-height: 40px;
+    padding-left: 10px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.masthead {
+    height: 75vh;
+    min-height: 500px;
+    background-image: url('images/HeroImage.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.masthead .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.masthead .row {
+    height: 85%;
+}
+
+.masthead img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.facts-figures {
+    background: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.counter {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.google-calendar {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+cite {
+    font-size: 16px;
+    padding-left: 10px;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+
+}
