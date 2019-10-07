@@ -30,24 +30,31 @@ ul li {
 .container {
     max-width: 1300px;
 }
-
-.btn-solid {
+.d-inline {
+    display: inline-block !important;
+}
+p.btn-solid > a {
     background: #ffb300;
     color: #000;
     font-size: 20px;
     padding: 15px 25px;
+    border-radius: 5px;
     border: none;
-    min-width: 150px;
+    display: block;
+    font-weight: 400;
+    text-align: center;
 }
 
-.btn-solid:hover {
+p.btn-solid > a:hover {
     background: #000;
     color: #fff;
 }
 
-.btn-sm {
+p.btn-sm > a {
     padding: 10px 15px;
     font-size: 18px;
+    display: inline-block;
+    min-width: 150px;
 }
 
 a {
@@ -75,6 +82,10 @@ a:hover {
     margin-bottom: 25px;
 }
 
+.title-2 {
+    font-size: 25px;
+}
+
 .masthead {
     height: 75vh;
     min-height: 500px;
@@ -86,7 +97,7 @@ a:hover {
     color: #fff;
 }
 
-.engagement {
+.masthead-sub {
     height: 50vh;
     background-image: url('images/HeroImage2.jpg');
     background-size: cover;
@@ -96,7 +107,22 @@ a:hover {
     color: #fff;
 }
 
+.engagement {
+    height: 50vh;
+    background-image: url('<t4 type="media" formatter="path/*" id="358210" />');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
 .masthead .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.masthead-sub .overlay {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
 }
@@ -110,11 +136,21 @@ a:hover {
     height: 85%;
 }
 
+.masthead-sub .row {
+    height: 100%;
+}
+
 .engagement .row {
     height: 100%;
 }
 
 .masthead img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.masthead-sub img {
     max-width: 500px;
     height: auto;
     margin-bottom: 30px;
@@ -174,5 +210,21 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     table {
         font-size: 14px;
+    }
+    
+    .masthead, .masthead-sub {
+        height: 25vh;
+        min-height: 0px;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    
+    .masthead .row, .masthead-sub .row {
+        height: 100%;
+    }
+    
+    .masthead img, .masthead-sub img {
+        max-width: 100%;
+        height: auto;
     }
 }
